@@ -1,12 +1,13 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 export default function Headers(){
     return (
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">Favourites</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/favourites">Favourites</Link></li>
             <li><a href="#contact">About</a></li>
-            <li className="right"><a className="active" href="#about">View Cart</a></li>
+            <li className="right"><Link to="/cart">View Cart</Link></li>
         </ul>
     )
 }
